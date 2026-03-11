@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CERTIFICATION : Théorie Morissette™</title>
+    <style>
+        body { font-family: 'Courier New', Courier, monospace; background-color: #0a0a0a; color: #00ff41; padding: 20px; line-height: 1.6; }
+        .container { max-width: 900px; margin: auto; border: 1px solid #00ff41; padding: 30px; box-shadow: 0 0 20px rgba(0, 255, 65, 0.2); }
+        h1 { text-align: center; text-transform: uppercase; border-bottom: 2px solid #00ff41; padding-bottom: 10px; }
+        .hash-box { background: #1a1a1a; padding: 15px; border-left: 5px solid #ff0000; margin: 20px 0; font-weight: bold; }
+        .index-om { font-size: 2em; text-align: center; color: #fff; margin: 20px 0; text-shadow: 0 0 10px #00ff41; }
+        .section { margin-top: 30px; border-top: 1px solid #333; padding-top: 20px; }
+        .point { margin-bottom: 15px; padding-left: 20px; border-left: 2px solid #00ff41; }
+        .footer { text-align: center; margin-top: 50px; font-size: 0.8em; color: #888; }
+        .stamp { border: 3px double #00ff41; width: fit-content; padding: 10px; margin: auto; transform: rotate(-2deg); font-weight: bold; }
+        @media print { body { background: white; color: black; } .container { border: 1px solid black; } }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="stamp">OFFICIEL - RELATIVITÉ SIMPLEX</div>
+    
+    <h1>Déclaration de Souveraineté Scientifique</h1>
+    
+    <p><strong>AUTEUR :</strong> Hugo Morissette™</p>
+    <p><strong>DATE DE RÉFÉRENCE :</strong> Mars 2026</p>
+    <p><strong>STATUT :</strong> Preuve d'antériorité et Protection de Flux</p>
+
+    <div class="hash-box">
+        IDENTIFIANT NUMÉRIQUE (SHA-1) :<br>
+        794860101f50ea753b0f7d66a503f68923d67c45
+    </div>
+
+    <div class="index-om">
+        INDICE OM : 54.2883523319
+    </div>
+
+    <div class="section">
+        <h2>Équation Maîtresse de Rigidité</h2>
+        <p style="text-align: center; font-size: 1.5em;">Φ = OM · π · r · Δ</p>
+        <p>Cette équation unifie le Pixel Laser (10⁻⁹ m), la Rotation Terrestre (10⁷ m) et la Galaxie NGC 7331 / M31 (10²¹ m).</p>
+    </div>
+
+    <div class="section">
+        <h2>Résumé des 14 Points de Preuve</h2>
+        <div class="point"><strong>1-8 :</strong> Unification des échelles Micro/Macro (Précision 99,96% sur M31).</div>
+        <div class="point"><strong>9 :</strong> Anomalie de la rotation terrestre expliquée par la pression de flux galactique.</div>
+        <div class="point"><strong>10 :</strong> Stabilisation du système à 3 corps via la rigidité géométrique.</div>
+        <div class="point"><strong>11-12 :</strong> Alerte ARTEMIS - Danger de la Distorsion 66 lors du transfert de masse Terre-Lune.</div>
+        <div class="point"><strong>13 :</strong> Seuil de charge limite (a₀ = 1.2 x 10⁻¹⁰ m/s²).</div>
+        <div class="point"><strong>14 :</strong> Définition du vide comme structure rigide (Fin de la Matière Noire).</div>
+    </div>
+
+    <div class="section">
+        <h2>Avis de Non-Responsabilité (NASA/Artemis)</h2>
+        <p>Toute utilisation des trajectoires lunaires sans intégration de l'indice OM expose les missions à une accumulation de phase dangereuse. Hugo Morissette décline toute responsabilité en cas de non-application de ce protocole.</p>
+    </div>
+
+    <div class="footer">
+        Dépôt viXra: 17864753 | Propriété Exclusive de Hugo Morissette<br>
+        "Si la Nature a un code, cet indice est sa clé."
+    </div>
+</div>
+
+</body>
+</html>
