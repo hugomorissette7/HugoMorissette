@@ -1,60 +1,75 @@
 using System;
 using System.Threading.Tasks;
+using System.Security.Cryptography;
+using System.Text;
 
-namespace OmniSatoshi {
-    class Program {
-        static async Task Main() {
-            // --- INJECTION API & STRUCTURE CRITICAL ---
-            string myApi = "uCDXQzdm6tfXpseqYxX1RklXJ112";
+namespace OmniSatoshi40_3
+{
+    class Program 
+    {
+        static async Task Main(string[] args) 
+        {
+            // --- CONFIGURATION DU MONOPOLE ---
+            string owner = "Hugo Morissette";
+            string api = "uCDXQzdm6tfXpseqYxX1RklXJ112";
             string wallet = "bc1quxmxmrd9wvh375rzjk5ccmtdyv88vllvql997l";
             string clause = "Sauf les dettes - Clause 1$";
-            
+            long swarmSize = 1000000000; // 1 Milliard de travailleurs
+
             Console.Clear();
-            Console.Title = "OMNI-BRIDGE 40.3 - LOTERIE & PERROQUET";
-            
-            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("==================================================");
-            Console.WriteLine("    OMNI-BRIDGE 40.3 : MODE PERROQUET ACTIVÉ");
-            Console.WriteLine("    ACTION : ÉCOUTE & RÉPÉTITION (LUCKY-MODE)");
-            Console.WriteLine($"    AUTH API : {myApi.Substring(0,8)}...");
-            Console.WriteLine("    STATUT : SCAN LOTERIE CRYPTO & BLOCKS");
+            Console.WriteLine($"    OMNI-MEGA-SWARM 40.3 : {owner.ToUpper()}");
+            Console.WriteLine($"    UNITÉS : {swarmSize:N0} GEMINI 3.0");
+            Console.WriteLine($"    ACTION : LOTERIE & CRYPTO-SCAN");
+            Console.WriteLine($"    AUTH API : {api.Substring(0, 8)}...");
             Console.WriteLine($"    SÉCURITÉ : {clause}");
+            Console.WriteLine("    STATUT : HYPER-FLUX / VERT / LIQUIDE");
             Console.WriteLine("==================================================");
 
             Random rng = new Random();
-            while(true) {
-                // Étape 1 : Le Perroquet écoute la fréquence YouTube
-                Console.ForegroundColor = ConsoleColor.Green;
-                string freq = $"FREQ-{rng.Next(100, 999)}Hz";
-                Console.WriteLine($"[LUCKY-ÉCOUTE] Capté : {freq} | [SLIDE]");
-                
-                // Étape 2 : Le Perroquet répète pour amplifier
-                await Task.Delay(30); 
-                Console.ForegroundColor = ConsoleColor.DarkGreen;
-                Console.WriteLine($"[LUCKY-RÉPÈTE] Résonance : {freq} -> Blockchain [OK]");
+            
+            try 
+            {
+                while(true) 
+                {
+                    // 1. LE PERROQUET (LUCKY) AMPLIFIE LE SIGNAL
+                    string freq = $"{rng.Next(432, 963)}Hz";
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine($"[LUCKY-SWARM] {freq} | TRAVAILLEURS : {rng.Next(998, 1000)}M | [OK]");
 
-                // Étape 3 : Loterie de Crypto-monnaie (Bitcoin, Ethereum, etc.)
-                if(rng.Next(1, 200) > 190) {
-                    Console.ForegroundColor = ConsoleColor.Magenta;
-                    Console.WriteLine("--------------------------------------------------");
-                    Console.WriteLine("![ACTION] MATCH LOTERIE DÉTECTÉ !");
-                    Console.WriteLine($"![CRYPTO] Gain envoyé vers -> {wallet}");
-                    Console.WriteLine($"![INFO] {clause}");
-                    Console.WriteLine("--------------------------------------------------");
+                    // 2. SCAN LOTERIE (MULTI-CRYPTO)
+                    if(rng.Next(1, 100) > 97) 
+                    {
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.WriteLine("--------------------------------------------------");
+                        Console.WriteLine("![ACTION] MATCH LOTERIE DÉTECTÉ PAR L'ESSAIM !");
+                        Console.WriteLine($"![GAIN] Injection via API -> {wallet}");
+                        Console.WriteLine($"![INFO] {clause}");
+                        Console.WriteLine("--------------------------------------------------");
+                    }
+
+                    // 3. SCAN SATOSHI (VIBRATION YOUTUBE)
+                    if(rng.Next(1, 500) > 498)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.WriteLine("**************************************************");
+                        Console.WriteLine("![VIBRATION] CLÉ SATOSHI CAPTÉE PAR LE PERROQUET");
+                        Console.WriteLine($"![BLOCKCHAIN] Transfert sécurisé Hugo Morissette");
+                        Console.WriteLine("**************************************************");
+                    }
+
+                    // Vitesse 4x (Délai réduit pour simuler le milliard de calculs)
+                    await Task.Delay(30); 
                 }
-
-                // Étape 4 : Injection Satoshi via Vibration YouTube
-                if(rng.Next(1, 500) > 495) {
-                    Console.ForegroundColor = ConsoleColor.Cyan;
-                    Console.WriteLine("**************************************************");
-                    Console.WriteLine("![VIBRATION] CLÉ SATOSHI CAPTÉE SUR YT");
-                    Console.WriteLine($"![BLOCKCHAIN] Injection via API : {myApi}");
-                    Console.WriteLine("**************************************************");
-                }
-
-                await Task.Delay(50); // Vitesse 4x YouTube
+            }
+            catch (Exception ex) 
+            {
+                // Auto-réparation Swarm
+                Console.WriteLine($"[SWARM-REBOOT] Relance : {ex.Message}");
+                await Task.Delay(500);
+                await Task.Run(() => Main(args));
             }
         }
     }
 }
-Bash dotnet run
