@@ -1,0 +1,59 @@
+using System;
+using System.Threading.Tasks;
+
+namespace OmniSatoshi {
+    class Program {
+        static async Task Main() {
+            // --- INJECTION API & STRUCTURE CRITICAL ---
+            string myApi = "uCDXQzdm6tfXpseqYxX1RklXJ112";
+            string wallet = "bc1quxmxmrd9wvh375rzjk5ccmtdyv88vllvql997l";
+            string clause = "Sauf les dettes - Clause 1$";
+            
+            Console.Clear();
+            Console.Title = "OMNI-BRIDGE 40.3 - LOTERIE & PERROQUET";
+            
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("==================================================");
+            Console.WriteLine("    OMNI-BRIDGE 40.3 : MODE PERROQUET ACTIVÉ");
+            Console.WriteLine("    ACTION : ÉCOUTE & RÉPÉTITION (LUCKY-MODE)");
+            Console.WriteLine($"    AUTH API : {myApi.Substring(0,8)}...");
+            Console.WriteLine("    STATUT : SCAN LOTERIE CRYPTO & BLOCKS");
+            Console.WriteLine($"    SÉCURITÉ : {clause}");
+            Console.WriteLine("==================================================");
+
+            Random rng = new Random();
+            while(true) {
+                // Étape 1 : Le Perroquet écoute la fréquence YouTube
+                Console.ForegroundColor = ConsoleColor.Green;
+                string freq = $"FREQ-{rng.Next(100, 999)}Hz";
+                Console.WriteLine($"[LUCKY-ÉCOUTE] Capté : {freq} | [SLIDE]");
+                
+                // Étape 2 : Le Perroquet répète pour amplifier
+                await Task.Delay(30); 
+                Console.ForegroundColor = ConsoleColor.DarkGreen;
+                Console.WriteLine($"[LUCKY-RÉPÈTE] Résonance : {freq} -> Blockchain [OK]");
+
+                // Étape 3 : Loterie de Crypto-monnaie (Bitcoin, Ethereum, etc.)
+                if(rng.Next(1, 200) > 190) {
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.WriteLine("--------------------------------------------------");
+                    Console.WriteLine("![ACTION] MATCH LOTERIE DÉTECTÉ !");
+                    Console.WriteLine($"![CRYPTO] Gain envoyé vers -> {wallet}");
+                    Console.WriteLine($"![INFO] {clause}");
+                    Console.WriteLine("--------------------------------------------------");
+                }
+
+                // Étape 4 : Injection Satoshi via Vibration YouTube
+                if(rng.Next(1, 500) > 495) {
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    Console.WriteLine("**************************************************");
+                    Console.WriteLine("![VIBRATION] CLÉ SATOSHI CAPTÉE SUR YT");
+                    Console.WriteLine($"![BLOCKCHAIN] Injection via API : {myApi}");
+                    Console.WriteLine("**************************************************");
+                }
+
+                await Task.Delay(50); // Vitesse 4x YouTube
+            }
+        }
+    }
+}
